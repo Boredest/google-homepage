@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
+
+
 nav{
     display: flex;
     flex-direction: row;
@@ -11,28 +17,109 @@ nav{
     align-items: center;
     min-height: 8vh;
     padding: 1rem;
+    font-size: 13px;
+    
+    
 }
 
 .nav-links{
     display: flex;
+    align-items: center;
+    
  
+}
+
+.nav-links img{
+    margin-right: 1rem;
+}
+
+.nav-links img:hover{
+    cursor: pointer;
 }
 li{
     list-style-type: none;
     margin-right: 1rem;
+    
 }
+
+li a{
+    text-decoration: none;
+    color: inherit;
+}
+li a:hover{
+    text-decoration: underline;
+}
+.button-top{
+    background-color: #4484f0 ;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #4484f0;
+    font-weight: bold;
+}
+
+.button-top:hover{
+    box-shadow: 0px 1.5px 0px darkgrey;
+    cursor: pointer;
+}
+
 
 
 .center-content{
     margin: auto;
     width: 50%;
-    max-width: 500px;
+    margin-top: 8.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
     
 }
 
-.buttons{
+.input{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
    
 }
+
+.search{
+    height: 2.5rem;
+    width: 36rem;
+    padding: 0.25rem 4rem;
+    border-radius: 2rem;
+    border: 1px solid #dfe1e5;
+    position: relative;
+    
+}
+
+#search-icon{
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: auto;
+    color: #9aa0a6;
+    padding: 0.5rem;
+
+    
+}
+
+.buttons-center{
+    margin: 11px 4px;
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #3c4043;
+    
+    border: 1px solid #f8f9fa;
+}
+
+.center-content button:hover{
+    cursor: pointer;
+    border: 1px solid darkgrey;
+    }
 
 footer{
     display: flex;
@@ -40,19 +127,30 @@ footer{
     justify-content: space-between;
     align-items: center;
     bottom: 0;
-    position: fixed;
     width: 100%;
     padding: 1rem;
+    font-size: 14px;
+    margin-top: auto;
     
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .footer-links{
     display: flex;
-    
+    align-items: center;
 }
 
+@media screen and (max-width: 540px) {
+    footer {
+      flex-direction: column;
+    }
+  }
 
-    
 
 
 
